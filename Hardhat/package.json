@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.11",
+    "hardhat": "^2.22.15"
+  },
+  "dependencies": {
+    "@gelatonetwork/relay-context": "^4.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "dotenv": "^16.4.5"
+  }
+}
