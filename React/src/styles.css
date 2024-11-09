@@ -1,0 +1,228 @@
+/* Modern gradient animation for background */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #fee6e3, #f9ecef, #e3f6f5, #bae5e5);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: #2d4059;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.connect-wallet {
+  background: #f7d794;
+  color: #2d4059;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(247, 215, 148, 0.3);
+}
+
+.connect-wallet:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(247, 215, 148, 0.4);
+  background: #f5cd79;
+}
+
+.vote-container {
+  max-width: 800px;
+  margin: 100px auto 40px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #e3f6f5;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #bae5e5;
+  box-shadow: 0 0 0 4px rgba(186, 229, 229, 0.2);
+}
+
+.button {
+  background: #ff9a9e;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 154, 158, 0.3);
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 154, 158, 0.4);
+  background: #ff8589;
+}
+
+.button:disabled {
+  background: #e2e8f0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.vote-options {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.vote-button {
+  padding: 1rem;
+  flex: 1;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.vote-for {
+  background: #95e1d3;
+  color: #2d4059;
+  box-shadow: 0 4px 12px rgba(149, 225, 211, 0.3);
+}
+
+.vote-for:hover {
+  background: #88d4c6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(149, 225, 211, 0.4);
+}
+
+.vote-for.inactive {
+  background: #a8e6da;
+  color: #2d4059;
+}
+
+.vote-against {
+  background: #ffa4a2;
+  color: #2d4059;
+  box-shadow: 0 4px 12px rgba(255, 164, 162, 0.3);
+}
+
+.vote-against:hover {
+  background: #ff9695;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 164, 162, 0.4);
+}
+
+.vote-against.inactive {
+  background: #ffb5b3;
+  color: #2d4059;
+}
+
+.feedback-message {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.feedback-message.error {
+  color: #e17055;
+  background: rgba(225, 112, 85, 0.1);
+}
+
+.proposals-section {
+  margin-top: 2rem;
+}
+
+.proposal-card {
+  border: none;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.proposal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.proposal-title {
+  color: #2d4059;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.proposal-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: rgba(186, 229, 229, 0.2);
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 1rem;
+  }
+  
+  .vote-container {
+    margin: 80px 1rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .vote-options {
+    flex-direction: column;
+  }
+}
