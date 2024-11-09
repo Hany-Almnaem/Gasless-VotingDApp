@@ -71,11 +71,11 @@ This link provides transparency and allows you to explore the transactions and c
 2. **Create a Proposal**:
    - Navigate to the “Create Proposal” section.
    - Enter a title and description, then click “Create Proposal.”
-   - Once created, the proposal will appear in the list below. You can view a [demo](assets/create-proposal.gif).
+   - Once created, the proposal will appear in the list below.
 
 3. **Vote on a Proposal**:
    - In the “Vote on Proposal” section, enter the Proposal ID, select “Vote For” or “Vote Against,” and submit your vote.
-   - A transaction confirmation will display once the vote is processed, as seen [here](assets/vote.gif).
+   - A transaction confirmation will display once the vote is processed.
 
 ## Gelato Relay Integration
 
@@ -97,14 +97,14 @@ const relayResponse = await relay.sponsoredCallERC2771(request, provider, gelato
 const data = contract.interface.encodeFunctionData('voteOnProposal', [proposalId, support]);
 const relayResponse = await relay.sponsoredCallERC2771(request, provider, gelatoApiKey);
 ```
-
 ## Project Demo
 
-- ![Proposal Creation]<img src=".assets/create-proposal.gif" width="600px" alt="Proposal Creation" />
-  
+### Creating a Proposal
+<img src=".assets/create-proposal.gif" width="600px" alt="Creating a Proposal" />
 
-- ![Voting on Proposal](assets/vote.gif)<img src=".assets/vote.gif" width="600px" alt="Voting on Proposal" />
-  
+### Voting on a Proposal
+<img src=".assets/vote.gif" width="600px" alt="Voting on a Proposal" />
 
-- ![Etherscan Confirmation]<img src=".assets/Screen-Shot-2024-11-09-at-3.28.15-PM.png" width="600px" alt="Etherscan Confirmation" />
+### Etherscan Transaction Confirmation
+<img src=".assets/Screen-Shot-2024-11-09-at-3.28.15-PM.png" width="600px" alt="Etherscan Transaction Confirmation" />
 
