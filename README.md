@@ -100,11 +100,11 @@ const relayResponse = await relay.sponsoredCallERC2771(request, provider, gelato
 ## Project Demo
 
 ### Creating a Proposal
-<img src=".assets/create-proposal.gif" width="600px" alt="Creating a Proposal" />
+<img src="..assets/create-proposal.gif" width="600px" alt="Creating a Proposal" />
 
 ### Voting on a Proposal
-<img src=".assets/vote.gif" width="600px" alt="Voting on a Proposal" />
+<img src="..assets/vote.gif" width="600px" alt="Voting on a Proposal" />
 
 ### Etherscan Transaction Confirmation
-<img src=".assets/Screen-Shot-2024-11-09-at-3.28.15-PM.png" width="600px" alt="Etherscan Transaction Confirmation" />
+<img src="..assets/Screen-Shot-2024-11-09-at-3.28.15-PM.png" width="600px" alt="Etherscan Transaction Confirmation" />
 
